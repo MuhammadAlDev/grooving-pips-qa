@@ -1,0 +1,27 @@
+{
+  "name": "grooving-pips-qa",
+  "version": "1.0.0",
+  "description": "repo for automation grooving pips",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadAlDev/grooving-pips-qa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MuhammadAlDev/grooving-pips-qa/issues"
+  },
+  "homepage": "https://github.com/MuhammadAlDev/grooving-pips-qa#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
