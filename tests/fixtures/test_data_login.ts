@@ -31,7 +31,7 @@ export const testDataLogin: LoginTestData[] = [
     scenario: 'Invalid password',
     email: process.env.LOGIN_EMAIL!,
     password: 'invalidpassword',
-    expectedResult: 'invalid email or password',
+    expectedResult: 'password must contain at least 3 of the following: uppercase, lowercase, number, special character',
     expectedType: 'error',
   },
 
