@@ -28,6 +28,14 @@ export const testDataLogin: LoginTestData[] = [
   },
 
   {
+    scenario: 'Unregistered email',
+    email: 'unregisteredemail@example.com',
+    password: process.env.LOGIN_PASSWORD!,
+    expectedResult: 'email not found',
+    expectedType: 'error',
+  },
+
+  {
     scenario: 'Invalid password',
     email: process.env.LOGIN_EMAIL!,
     password: 'Invalidpassword123!',
@@ -44,7 +52,7 @@ export const testDataLogin: LoginTestData[] = [
   },
 
   {
-    scenario: 'Invalid email format',
+    scenario: 'Invalid email format (without domain)',
     email: 'invalidemail@example',
     password: process.env.LOGIN_PASSWORD!,
     expectedResult: 'invalid email format',
