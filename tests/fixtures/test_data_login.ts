@@ -98,4 +98,20 @@ export const testDataLogin: LoginTestData[] = [
     expectedResult: 'Please fill out this field.',
     expectedType: 'validation',
   },
+
+   {
+    scenario: 'Login with HR credentials',
+    email: process.env.LOGIN_EMAIL_HR!,
+    password: process.env.LOGIN_PASSWORD_HR!,
+    expectedResult: 'Login successful',
+    expectedType: 'success',
+  },
+
+  {
+    scenario: 'Login with employee credentials',
+    email: process.env.LOGIN_EMAIL_EMP01!,
+    password: process.env.LOGIN_PASSWORD_EMP01!,
+    expectedResult: 'Login successful',
+    expectedType: 'success',
+  },
 ];
